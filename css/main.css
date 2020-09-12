@@ -1,0 +1,55 @@
+/**************** common ****************/
+html, body, p, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/**************** wrapper ****************/
+#wrapper {
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 1000px;
+
+    background-color: tomato;
+}
+
+/**************** header ****************/
+header {
+    text-align: center;
+}
+
+/**************** main ****************/
+textarea {
+    width: 630px;
+    height: 600px;
+}
+
+#main-left {
+    float: left;
+    width: 65%;
+
+    background-color: skyblue;
+}
+
+#in-filepath {
+    width: 80%;
+}
+
+#main-right {
+    width: 35%;
+    float: left;
+
+    background-color: pink;
+}
+
+.clear-div {
+    clear: both;
+}
+
+/**************** footer ****************/
+footer {
+}
