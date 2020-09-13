@@ -12,27 +12,26 @@
                 <h1>データ整形</h1>
             </header>
             <main>
-                <div id="main-left">
-                    <textarea  id="txa-resutl" rows="8" cols="80"></textarea>
-                </div>
-                <div id="main-right">
-                    <p>改行コード</p>
-                    <select id="cmb-linefeed" size="1">
-                        <option value="1">CRLF (Windows)</option>
-                        <option value="2">CR (Mac)</option>
-                        <option value="3">LF (Unix)</option>
-                    </select>
-                    <p>読み込みファイル</p>
-                    <input type="text" id="in-fileName" readonly>
+                <div id="main-header">
                     <input type="file" id="in-file">
-                    <p><br></p> <!--1行スペースを空ける-->
-                    <div><button type="button" name="btn-proc">処理開始</button></div>
-                    <div><button type="button" name="btn-csv">CSV出力</button></div>
+                    <input type="text" id="in-replace" placeholder="置換文字列を入力してください">
                 </div>
-                <div class="clear-div"></div> <!--floatクリア用タグ-->
+                <div id="main-body">
+                    <div id="main-body-left">
+                        <p>変換前</p>
+                        <textarea  id="txa-target" rows="8" cols="80"></textarea>
+                    </div>
+                    <div id="main-body-center">
+                        <div><button type="button" id="btn-proc">処理開始</button></div>
+                        <div><button type="button" id="btn-csv">CSV出力</button></div>
+                    </div>
+                    <div id="main-body-right">
+                        <p>変換後</p>
+                        <textarea  id="txa-result" rows="8" cols="80"></textarea>
+                    </div>
+                    <div class="clear-div"></div> <!--floatクリア用タグ-->
+                </div>
             </main>
-            <footer>
-            </footer>
         </div>
         <script type="text/javascript" src="../js/utils.js"></script>
     </body>
